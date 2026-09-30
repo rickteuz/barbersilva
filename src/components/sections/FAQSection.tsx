@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     question: 'Posso pagar a assinatura do Clube no cartão?',
-    answer: 'Sim, o Clube Barber Silva possui recorrência automática via cartão de crédito, sem prender o limite do seu cartão.',
+    answer: 'Sim, o Clube Fortuna possui recorrência automática via cartão de crédito, sem prender o limite do seu cartão.',
   },
   {
     question: 'Qual o tempo médio do serviço?',
@@ -31,7 +31,7 @@ export default function FAQSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[#d97706] font-semibold tracking-widest uppercase mb-4 text-sm"
+            className="text-[#7b896f] font-semibold tracking-widest uppercase mb-4 text-sm"
           >
             Esclarecimentos
           </motion.h2>
@@ -67,7 +67,7 @@ export default function FAQSection() {
                   <motion.span
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.4 }}
-                    className="text-[#d97706] text-2xl flex-shrink-0"
+                    className="text-[#7b896f] text-2xl flex-shrink-0"
                   >
                     ↓
                   </motion.span>

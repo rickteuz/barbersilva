@@ -8,34 +8,33 @@ export default function Footer() {
           
           <div className="flex flex-col items-center md:items-start">
             <Image 
-              src="/images/logo-barber.png" 
-              alt="Barber Silva Logo" 
-              width={140} 
-              height={140} 
-              className="w-auto h-24 mb-6 opacity-80 hover:opacity-100 mix-blend-screen transition-all duration-500"
+              src="/images/fortuna/logo-stacked.png" 
+              alt="Fortuna Barbearia" 
+              width={220} 
+              height={220} 
+              className="w-auto h-28 mb-6 opacity-90 hover:opacity-100 transition-opacity duration-200"
             />
             <p className="text-gray-500 text-sm">
-              Muito além da barba, cabelo e bigode.<br/>
-              A experiência premium que você merece.
+              Estilo de homens fortes.<br/>
+              Uma experiência autoral de cuidado masculino.
             </p>
           </div>
 
           <div className="flex flex-col items-center md:items-start">
             <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-6">Contato</h4>
-            <a href="#" className="text-gray-400 hover:text-[#d97706] mb-2 transition-colors">
-              (31) 3018-4311
+            <a href="https://wa.me/5531984291818" className="text-gray-400 hover:text-[#7b896f] mb-2 transition-colors">
+              (31) 98429-1818
             </a>
-            <a href="#" className="text-gray-400 hover:text-[#d97706] transition-colors">
-              contato@barbersilva.com.br
+            <a href="mailto:contato@fortunabarbearia.com.br" className="text-gray-400 hover:text-[#7b896f] transition-colors">
+              contato@fortunabarbearia.com.br
             </a>
           </div>
 
           <div className="flex flex-col items-center md:items-start">
             <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-6">Endereço</h4>
             <p className="text-gray-400">
-              Av. Sagrada Família, 1000<br/>
-              Belo Horizonte - MG<br/>
-              CEP: 30000-000
+              Rua Rio Congo, 181<br/>
+              Novo Riacho · Contagem - MG
             </p>
           </div>
 
@@ -43,10 +42,18 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-600 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Barber Silva. Todos os direitos reservados.
+            © {new Date().getFullYear()} Fortuna Barbearia. Todos os direitos reservados.
           </p>
           <div className="text-gray-600 text-sm">
-            Feito com excelência para homens exigentes.
+            Desenvolvido por{" "}
+            <a
+              href="https://www.instagram.com/mateusdevv/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#7b896f] hover:text-[#fff8f3] transition-colors"
+            >
+              Mateus
+            </a>
           </div>
         </div>
       </div>

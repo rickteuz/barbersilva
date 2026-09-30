@@ -1,59 +1,54 @@
 'use client';
 
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import BlurText from '../ui/BlurText';
 
 export default function HeroSection() {
   const ref = useRef(null);
+  const shouldReduceMotion = useReducedMotion();
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"]
   });
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const scaleBg = useTransform(scrollYProgress, [0, 1], [1.04, 1.12]);
 
   return (
-    <section ref={ref} className="relative w-full h-[100dvh] flex flex-col items-center justify-center overflow-hidden bg-[#050505]">
+    <section ref={ref} id="hero" className="relative w-full h-dvh flex flex-col items-center justify-center overflow-hidden bg-[#0d0f0d]">
       {/* Background Image com parallax e overlay */}
       <motion.div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-50"
-        style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070&auto=format&fit=crop')",
-          y: yBg 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-60 will-change-transform"
+        style={{
+          backgroundImage: "url('/images/fortuna/ambiente-3.webp')",
+          y: shouldReduceMotion ? undefined : yBg,
+          scale: shouldReduceMotion ? 1.04 : scaleBg
         }}
+        aria-hidden="true"
       />
-      <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent" />
+      <div className="absolute inset-0 z-10 bg-[#0d0f0d]/65" />
 
       {/* Radial glow subtle */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#d97706]/10 blur-[120px] rounded-full pointer-events-none z-10" />
+      <div className="absolute left-1/2 top-1/2 z-10 size-[min(42rem,90vw)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#1f3a26]/25 blur-[100px] pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center px-6 text-center w-full max-w-4xl mx-auto mt-16">
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[#d97706] font-semibold tracking-widest uppercase mb-4 text-sm md:text-base"
-        >
-          Barber Silva
-        </motion.p>
-        
+      <div className="relative z-20 mx-auto mt-16 flex w-full max-w-5xl -translate-y-6 flex-col items-center justify-center px-6 text-center md:translate-y-0">
         <BlurText
-          text="Muito além da barba, cabelo e bigode"
+          text="Estilo de homens fortes"
           delay={100}
           animateBy="words"
           direction="bottom"
-          className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8 text-shadow-sm justify-center"
+          className="max-w-4xl justify-center text-5xl font-bold leading-[0.95] tracking-[-0.03em] text-[#fff8f3] text-shadow-sm sm:text-6xl md:text-8xl"
         />
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-          className="flex flex-col sm:flex-row gap-4"
+          className="mt-12 flex flex-col gap-4 sm:flex-row"
         >
-          <a href="#" className="btn-primary w-full sm:w-auto text-lg">
-            Agendar Horário
+          <a href="https://wa.me/5531984291818" className="btn-primary min-h-[56px] w-full px-8 text-base sm:w-auto md:text-lg">
+            Agendar horário
           </a>
         </motion.div>
       </div>

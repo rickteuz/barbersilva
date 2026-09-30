@@ -6,7 +6,7 @@ export default function ClubeSection() {
   return (
     <section id="clube" className="w-full bg-black relative z-10 py-32 overflow-hidden">
       {/* Background Orbs */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#d97706]/10 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-[800px] bg-[#1f3a26]/30 blur-[150px] rounded-full pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -18,9 +18,9 @@ export default function ClubeSection() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="order-2 lg:order-1"
           >
-            <h2 className="text-[#d97706] font-semibold tracking-widest uppercase mb-4 text-sm">Assinatura Exclusiva</h2>
+            <h2 className="text-[#7b896f] font-semibold tracking-widest uppercase mb-4 text-sm">Assinatura Exclusiva</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Clube Barber Silva
+              Clube Fortuna
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
               Garanta seu estilo impecável o mês inteiro pagando um valor fixo. Sem surpresas, com prioridade de agendamento e descontos em produtos exclusivos.
@@ -28,13 +28,13 @@ export default function ClubeSection() {
             
             <ul className="space-y-4 mb-10 text-gray-300">
               <li className="flex items-center gap-3">
-                <span className="text-[#d97706] text-xl">✓</span> Cortes ilimitados ou fixos (conforme plano)
+                <span className="text-[#7b896f] text-xl">✓</span> Cortes ilimitados ou fixos (conforme plano)
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#d97706] text-xl">✓</span> Prioridade na fila de agendamento
+                <span className="text-[#7b896f] text-xl">✓</span> Prioridade na fila de agendamento
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#d97706] text-xl">✓</span> 15% OFF em toda linha de cosméticos
+                <span className="text-[#7b896f] text-xl">✓</span> Descontos na linha de cosméticos
               </li>
             </ul>
 
@@ -51,10 +51,10 @@ export default function ClubeSection() {
             className="order-1 lg:order-2 bg-gradient-to-br from-white/10 to-white/5 p-[1px] rounded-3xl premium-shadow group"
           >
             <div className="bg-black/40 backdrop-blur-xl rounded-[23px] p-10 h-full flex flex-col justify-center items-center text-center relative overflow-hidden transition-all duration-500 group-hover:bg-black/30">
-              <div className="absolute inset-0 bg-gradient-to-b from-[#d97706]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#d97706] to-transparent opacity-50" />
+              <div className="absolute inset-0 bg-[#1f3a26]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none" />
+              <img src="/images/fortuna/logo-seal.png" alt="" aria-hidden="true" className="size-24 object-contain mb-5 opacity-90" />
               
-              <h4 className="text-3xl font-extrabold text-white mb-6">Plano Black</h4>
+              <h4 className="text-3xl font-extrabold text-white mb-6">Clube Fortuna</h4>
               
               <p className="text-gray-400 mb-8">O plano definitivo para quem não abre mão de estar sempre com o visual alinhado.</p>
               

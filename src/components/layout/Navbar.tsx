@@ -7,7 +7,7 @@ const links = [
   { label: "Início", href: "#hero" },
   { label: "Sobre", href: "#sobre" },
   { label: "Serviços", href: "#servicos" },
-  { label: "Clube BS", href: "#clube" },
+  { label: "Clube Fortuna", href: "#clube" },
   { label: "Galeria", href: "#galeria" },
   { label: "Time", href: "#time" },
 ];
@@ -53,7 +53,7 @@ export default function Navbar() {
     }}>
       <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <a href="#hero" style={{ fontFamily: "var(--font-display)", fontSize: "1.4rem", fontWeight: 700, color: "#fff" }}>
-          BARBER<span style={{ color: "var(--orange)", fontStyle: "italic" }}>SILVA</span>
+          FORTUNA<span style={{ color: "var(--brand-teal)", fontStyle: "italic" }}>.</span>
         </a>
         
         <nav className="desktop-only" style={{ display: "flex", alignItems: "center", gap: "2rem" }}>

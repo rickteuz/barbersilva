@@ -1,18 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  
-  --brand-orange: #d97706; /* Laranja sofisticado (amber-600/700 style) */
-  --brand-orange-hover: #b45309; 
-  --brand-dark: #0a0a0a; /* Fundo secundário para contraste levitação */
+  --background: #0d0f0d;
+  --foreground: #fff8f3;
+  --hunter-green: #1f3a26;
+  --off-black: #0d0f0d;
+  --sage: #7b896f;
+  --pearl: #fff8f3;
+  --night: #000000;
+  --brand-gold: #7b896f;
+  --brand-gold-hover: #fff8f3;
+  --brand-teal: #1f3a26;
+  --brand-dark: #0d0f0d;
+  --muted: #b7beb1;
+  --black: #000000;
+  --white: #fff8f3;
+  --orange: #7b896f;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+  background-color: var(--off-black);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -24,7 +34,7 @@ body {
   }
 
   .halo-orange {
-    box-shadow: 0 0 40px -10px rgba(217, 119, 6, 0.4);
+    box-shadow: 0 0 40px -10px rgba(123, 137, 111, 0.25);
   }
 
   .tempo-do-rico {
@@ -33,6 +43,21 @@ body {
 
   .text-shadow-sm {
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+
+  @keyframes whatsapp-pulse {
+    0%, 100% {
+      opacity: 0.2;
+      transform: scale(0.92);
+    }
+    65% {
+      opacity: 0;
+      transform: scale(1.4);
+    }
+  }
+
+  .animate-whatsapp-pulse {
+    animation: whatsapp-pulse 2.8s ease-out infinite;
   }
 
   @keyframes marquee {
@@ -56,19 +81,37 @@ body {
 /* Botões baseados na Thumb Zone (>= 48px de altura) */
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center bg-[#d97706] text-white font-bold rounded-md;
+    @apply inline-flex items-center justify-center bg-[#7b896f] text-[#0d0f0d] font-bold rounded-md;
     min-height: 56px; /* Mais generoso que 48px para luxo */
     padding: 0 2rem;
     transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   }
   
   .btn-primary:hover {
-    @apply bg-[#b45309];
-    box-shadow: 0 8px 30px rgba(217, 119, 6, 0.5);
+    @apply bg-[#fff8f3];
+    box-shadow: 0 8px 30px rgba(123, 137, 111, 0.25);
     transform: translateY(-2px);
   }
 
   .section-padding {
     @apply py-24 md:py-32 px-6 lg:px-8 max-w-7xl mx-auto;
+  }
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: "Tallica", var(--font-display), Impact, "Arial Narrow", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+::selection { background: var(--sage); color: var(--off-black); }
+
+:focus-visible { outline: 2px solid var(--sage); outline-offset: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }

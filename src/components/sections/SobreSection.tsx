@@ -32,29 +32,29 @@ export default function SobreSection() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col justify-center"
           >
-            <h2 className="text-[#d97706] font-semibold tracking-widest uppercase mb-4 text-sm">Nossa História</h2>
+            <h2 className="text-[#7b896f] font-semibold tracking-widest uppercase mb-4 text-sm">A identidade Fortuna</h2>
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
-              Tradição e Estilo em um só lugar.
+              Presença, técnica e personalidade.
             </h3>
             
             <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
               <p>
-                A Barber Silva nasceu com o propósito de elevar o padrão do cuidado masculino. Não somos apenas um local para cortar o cabelo; somos um refúgio para o homem moderno que valoriza excelência, conforto e um ambiente exclusivo.
+                A Fortuna nasceu para transformar o cuidado masculino em uma experiência de presença. Cada detalhe da casa combina preto profundo, dourado e o verde elétrico da nossa identidade.
               </p>
               <p>
-                Em um espaço premium, projetado nos mínimos detalhes, oferecemos técnicas clássicas alinhadas às tendências mais atuais. Aqui, cada serviço é uma experiência personalizada.
+                Aqui, técnica clássica encontra uma estética contemporânea: atendimento próximo, acabamento preciso e um ambiente que tem a nossa assinatura.
               </p>
             </div>
 
             <div className="mt-12 flex items-center gap-6">
               <div className="flex flex-col">
                 <span className="text-4xl font-bold text-white mb-1">+5k</span>
-                <span className="text-sm text-[#d97706] uppercase tracking-wider">Clientes Atendidos</span>
+                <span className="text-sm text-[#7b896f] uppercase tracking-wider">Experiência autoral</span>
               </div>
               <div className="w-px h-16 bg-white/10" />
               <div className="flex flex-col">
                 <span className="text-4xl font-bold text-white mb-1">5★</span>
-                <span className="text-sm text-[#d97706] uppercase tracking-wider">Avaliação Máxima</span>
+                <span className="text-sm text-[#7b896f] uppercase tracking-wider">Cuidado em cada detalhe</span>
               </div>
             </div>
           </motion.div>

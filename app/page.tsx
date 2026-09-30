@@ -14,7 +14,7 @@ import SectionDivider from '@/src/components/ui/SectionDivider';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-[#d97706] selection:text-white overflow-x-hidden w-full max-w-[100vw]">
+    <main className="min-h-screen bg-[#0d0f0d] text-[#fff8f3] overflow-x-hidden w-full max-w-[100vw]">
       <Header />
       <HeroSection />
       <SectionDivider />

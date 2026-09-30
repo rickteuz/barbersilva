@@ -22,7 +22,7 @@ export default function TimeSection() {
             className="col-span-1 lg:col-span-5 relative group"
           >
             {/* Efeito de brilho atrás da foto */}
-            <div className="absolute -inset-4 bg-gradient-to-tr from-[#d97706]/20 to-transparent blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+            <div className="absolute -inset-4 bg-[#1f3a26]/30 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none" />
             
             <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden premium-shadow bg-[#0a0a0a] border border-white/10">
               {/* Foto do Henrique em PB com hover revelando a cor */}
@@ -49,14 +49,14 @@ export default function TimeSection() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             className="col-span-1 lg:col-span-7 lg:pl-10"
           >
-            <div className="inline-block px-4 py-1.5 rounded-full border border-[#d97706]/30 bg-[#d97706]/5 mb-6">
-              <span className="text-[#d97706] font-semibold tracking-widest uppercase text-xs">
+            <div className="inline-block px-4 py-1.5 rounded-full border border-[#7b896f]/30 bg-[#1f3a26]/30 mb-6">
+              <span className="text-[#7b896f] font-semibold tracking-widest uppercase text-xs">
                 Nossa Autoridade
               </span>
             </div>
             
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              A excelência por trás da <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#d97706] to-[#fbbf24]">lâmina</span>.
+              A excelência por trás da <span className="text-[#fff8f3]">lâmina</span>.
             </h3>
             
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-6">
@@ -64,11 +64,11 @@ export default function TimeSection() {
             </p>
             
             <p className="text-gray-400 text-lg leading-relaxed mb-10">
-              Fundador da Barber Silva, sua missão sempre foi clara: elevar o padrão do atendimento masculino, combinando técnica impecável e uma experiência de relaxamento que todo homem merece no seu dia a dia.
+              Na Fortuna, a missão é clara: elevar o padrão do atendimento masculino, combinando técnica impecável e uma experiência de relaxamento que transforma o seu dia.
             </p>
 
-            <blockquote className="relative p-6 bg-white/5 border-l-2 border-[#d97706] rounded-r-2xl mb-10 backdrop-blur-sm">
-              <div className="absolute -top-4 -left-3 text-4xl text-[#d97706]/40 font-serif">"</div>
+            <blockquote className="relative p-6 bg-white/5 border border-white/10 rounded-2xl mb-10 backdrop-blur-sm">
+              <div className="absolute -top-4 -left-3 text-4xl text-[#7b896f]/40 font-serif">"</div>
               <p className="text-xl text-gray-200 italic font-serif leading-relaxed relative z-10">
                 O cabelo e a barba são a moldura do seu rosto. Meu trabalho é garantir que essa moldura seja, todos os dias, uma obra de arte.
               </p>
@@ -77,7 +77,7 @@ export default function TimeSection() {
             <div className="flex items-center gap-6">
               <div>
                 <p className="font-serif italic text-3xl md:text-4xl text-white">Henrique Silva</p>
-                <p className="text-sm text-[#d97706] uppercase tracking-widest mt-2 font-bold">Master Barber</p>
+                <p className="text-sm text-[#7b896f] uppercase tracking-widest mt-2 font-bold">Master Barber</p>
               </div>
             </div>
           </motion.div>

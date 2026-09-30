@@ -16,7 +16,7 @@ export default function SectionDivider() {
           whileInView={{ left: "100%", opacity: [0, 1, 1, 0] }}
           viewport={{ once: true }}
           transition={{ duration: 2.5, ease: "easeInOut", delay: 0.5 }}
-          className="absolute top-1/2 -translate-y-1/2 w-32 h-[2px] bg-gradient-to-r from-transparent via-[#d97706] to-transparent shadow-[0_0_15px_#d97706]"
+          className="absolute top-1/2 -translate-y-1/2 w-32 h-px bg-[#7b896f] opacity-60"
         />
       </motion.div>
     </div>

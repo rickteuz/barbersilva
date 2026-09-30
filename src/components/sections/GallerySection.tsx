@@ -4,17 +4,15 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const images = [
-  '/images/gallery/ambiente-1.jpg',
-  '/images/gallery/corte-1.jpg',
-  '/images/mockup-app.png',
-  '/images/gallery/barba-1.jpg',
-  '/images/gallery/equipe-1.jpg',
-  '/images/gallery/corte-2.jpg',
-  '/images/clipper-gold.png',
-  '/images/gallery/ambiente-2.jpg',
-  '/images/gallery/barba-2.jpg',
-  '/images/gallery/corte-3.jpg',
-  '/images/gallery/corte-4.jpg',
+  '/images/fortuna/ambiente-1.webp',
+  '/images/fortuna/corte-1.webp',
+  '/images/fortuna/atendimento.webp',
+  '/images/fortuna/cliente-1.webp',
+  '/images/fortuna/ambiente-2.webp',
+  '/images/fortuna/corte-2.webp',
+  '/images/fortuna/ambiente-3.webp',
+  '/images/fortuna/cliente-2.webp',
+  '/images/fortuna/corte-3.webp',
 ];
 
 export default function GallerySection() {
@@ -31,7 +29,7 @@ export default function GallerySection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[#d97706] font-semibold tracking-widest uppercase mb-4 text-sm"
+          className="text-[#7b896f] font-semibold tracking-widest uppercase mb-4 text-sm"
         >
           Nossa Arte
         </motion.h2>
@@ -42,7 +40,7 @@ export default function GallerySection() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
           className="text-4xl md:text-5xl font-bold text-white"
         >
-          A experiência Barber Silva
+          A experiência Fortuna
         </motion.h3>
       </div>
 
